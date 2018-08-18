@@ -25,6 +25,8 @@ html {
 }
 
 .image-container img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -112,6 +114,10 @@ header .mobile {
 
 /* Sign Up Section */
 
+.banner {
+  background-image: url("../images/banner-landingpage.jpg")
+}
+
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
@@ -120,6 +126,7 @@ header .mobile {
 }
 
 #sign-up-cta {
+  margin: 10.625rem 0rem 0rem 6.25rem;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -227,6 +234,7 @@ header .mobile {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .feature h2 {
@@ -294,6 +302,7 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
 }
@@ -334,11 +343,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -347,8 +356,8 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
-  height: 1.875rem;
+#quotes-section .quote-citation {
+  padding-left: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
@@ -373,12 +382,14 @@ header .mobile {
 footer {
   background-color: #9b9b9b;
   padding: 1.5rem 2rem;
+
 }
 
 footer .content {
+  font-family: "Roboto-Regular";
   color: white;
+  font-size: 12px;
   display: flex;
-  font-size: .75rem;
 }
 
 footer .copyright {
